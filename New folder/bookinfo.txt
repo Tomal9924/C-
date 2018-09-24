@@ -1,0 +1,177 @@
+CREATE TABLE [dbo].[bookinfo] (
+    [id]      INT          IDENTITY (1, 1) NOT NULL,
+    [Name]    VARCHAR (50) NOT NULL,
+    [Author]  VARCHAR (50) NOT NULL,
+    [Edition] VARCHAR (50) NOT NULL,
+    [Type]    VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_bookinfo] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+
+
+--------------------------------------------
+
+CREATE TABLE [dbo].[Co] (
+    [id]          INT          IDENTITY (1, 1) NOT NULL,
+    [CourseAdded] VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_Co] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+-----------------------------------------
+
+CREATE TABLE [dbo].[Course] (
+    [id]         INT          NOT NULL,
+    [CourseName] VARCHAR (50) NOT NULL,
+    [Seat]       INT          NOT NULL,
+    CONSTRAINT [PK_Course] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+----------------------------------------------------
+
+CREATE TABLE [dbo].[dsadsa] (
+    [id]         INT          IDENTITY (1, 1) NOT NULL,
+    [CourseName] VARCHAR (50) NOT NULL,
+    [Seat]       INT          NOT NULL,
+    CONSTRAINT [PK_dsadsa] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+--------------------------------------------
+
+
+CREATE TABLE [dbo].[exam] (
+    [id]    INT          IDENTITY (1, 1) NOT NULL,
+    [ques]  VARCHAR (50) NOT NULL,
+    [ans]   INT          NOT NULL,
+    [marks] INT          NOT NULL,
+    CONSTRAINT [PK_exam] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+--------------------------------------------------
+
+CREATE TABLE [dbo].[Faculty_Info] (
+    [Id]              INT          IDENTITY (1, 1) NOT NULL,
+    [Name]            VARCHAR (50) NOT NULL,
+    [Email]           VARCHAR (50) NOT NULL,
+    [Contact]         VARCHAR (50) NOT NULL,
+    [Address]         VARCHAR (50) NOT NULL,
+    [Education]       VARCHAR (50) NOT NULL,
+    [Age]             VARCHAR (50) NOT NULL,
+    [Sex]             VARCHAR (50) NOT NULL,
+    [Religion]        VARCHAR (50) NOT NULL,
+    [PreferredCourse] VARCHAR (50) NOT NULL,
+    [Depatment]       VARCHAR (50) NOT NULL,
+    [CreatePassword]  VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_Faculty_Info] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+--------------------------------------------------------
+
+CREATE TABLE [dbo].[gif] (
+    [id]   INT          IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (50) NOT NULL,
+    [Type] VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_gif] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+===================================================
+
+
+CREATE TABLE [dbo].[login] (
+    [id]       INT          IDENTITY (1, 1) NOT NULL,
+    [name]     VARCHAR (50) NOT NULL,
+    [password] VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_login] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+----------------------------------------------------
+
+
+
+CREATE TABLE [dbo].[studentinfo] (
+    [id]             INT          IDENTITY (1, 1) NOT NULL,
+    [StudentName]    VARCHAR (50) NOT NULL,
+    [FatherName]     VARCHAR (50) NOT NULL,
+    [Email]          VARCHAR (50) NOT NULL,
+    [Mobile]         VARCHAR (50) NOT NULL,
+    [Age]            VARCHAR (50) NOT NULL,
+    [Sex]            VARCHAR (50) NOT NULL,
+    [Religion]       VARCHAR (50) NOT NULL,
+    [AdmissionYear]  VARCHAR (50) NOT NULL,
+    [CreatePassword] VARCHAR (50) NOT NULL,
+    [Department]     VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_studentinfo] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+--------------------------------------------------------------
+
+CREATE TABLE [dbo].[videotutorial] (
+    [id]   INT          IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (50) NOT NULL,
+    [Type] VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_videotutorial] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
